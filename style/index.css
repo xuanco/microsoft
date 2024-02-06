@@ -56,10 +56,14 @@
   color: #333;
 }
 
+.showcasep {
+  color: #f9f7de;
+}
+
 .showcase {
   width: 100%;
   height: 500px;
-  background: url("https://i.ibb.co/zGSDGCL/slide1.png") no-repeat center center/cover;
+  background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Xbox-PC-Game-Pass-FY24HOLLNY:VP5-1920x600") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,6 +160,9 @@
   align-items: center;
   justify-content: flex-start;
   margin: 30px 0 30px;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
 }
 
 .follow * {
@@ -178,6 +185,13 @@
   grid-gap: 10px;
   align-items: flex-start;
   justify-content: center;
+}
+
+.back-to-top {
+  padding: auto;
+  margin: 40px;
+  display: flex;
+  justify-content: right;
 }
 
 .footer {
@@ -214,6 +228,89 @@
 .footer li {
   margin-left: 30px;
   margin-bottom: 20px;
+}
+
+.dropdown {
+  width: 100%;
+  max-width: 47.5rem;
+  margin: 5rem auto;
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.dropdown__select {
+  border-radius: inherit;
+}
+
+.dropdown__list {
+  margin-top: 2.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.dropdown__list:before {
+  content: "";
+  height: 2.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transform: translateY(-100%);
+}
+
+.dropdown:hover .dropdown__list {
+  display: block;
+}
+
+.dropdown__select,
+.dropdown__item {
+  width: 100%;
+  padding: 3rem;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown__item {
+  transition: background-color 0.2s linear;
+}
+
+.dropdown__item:first-child {
+  border-radius: 4px 4px 0 0;
+  position: relative;
+}
+
+.dropdown__item:first-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--primary);
+  transform: translateY(-100%);
+  transition: border-color 0.2s linear;
+}
+
+.dropdown__item:first-child:hover:before {
+  border-bottom-color: var(--secondary);
+}
+
+.dropdown__item:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown__item:hover {
+  background-color: var(--secondary);
 }
 
 * {

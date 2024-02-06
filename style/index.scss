@@ -1,5 +1,9 @@
 @import "main";
 @import "footer";
+@import "variable"; 
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,3 +27,4 @@ ul {
     width: 95%;
     margin: auto;
 }
+
